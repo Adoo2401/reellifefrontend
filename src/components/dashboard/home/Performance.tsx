@@ -17,7 +17,7 @@ const Performance = () => {
   const screens = useBreakpoint();
   
   return (
-    <Card className="mt-10 h-[650px] lg:h-[480px]" extra={Extra} style={{ marginTop: "60px" }} title="Performance">
+    <Card className="mt-10 h-[650px] lg:h-[480px] " extra={Extra} style={{ marginTop: "60px" }} title={<h1 className="font-bold text-lg">Performance</h1>}>
   <Tabs
     defaultActiveKey="reach"
     tabPosition={screens.lg?"left":"top"}

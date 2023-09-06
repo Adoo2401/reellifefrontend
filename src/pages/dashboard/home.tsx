@@ -1,10 +1,13 @@
 import type { ReactElement } from 'react'
 
+
 import type { NextPageWithLayout } from '../_app'
 import DashboardLayout from '@/components/dashboard/Layout'
 import Instances from '@/components/dashboard/home/Instances'
 import Overview from '@/components/dashboard/home/Overview'
 import Performance from '@/components/dashboard/home/Performance'
+import StoryGroup from '@/components/dashboard/home/StoryGroup'
+import Stories from '@/components/dashboard/home/Stories'
 
  
 const Page: NextPageWithLayout = () => {
@@ -13,6 +16,8 @@ const Page: NextPageWithLayout = () => {
        <Instances/>
        <Overview/>
        <Performance/>
+       <StoryGroup/>
+       <Stories/>
     </div>
   )
 }

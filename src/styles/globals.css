@@ -59,3 +59,8 @@ body > div:first-child {
     margin-top: 8px; /* Adjust as needed for spacing */
   }
 }
+
+
+.custom-scroll-container {
+  scroll-behavior: smooth;
+}
