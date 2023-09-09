@@ -1,17 +1,21 @@
 import React , {useState} from 'react';
 import { items } from '@/constants'
 import {usePathname} from 'next/navigation'
-import { Layout, Menu,Button } from 'antd';
+import { Layout, Menu,Button,Grid } from 'antd';
 const { Header, Content, Footer, Sider } = Layout;
+
+const {useBreakpoint} = Grid
 
 
 const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
     const pathname = usePathname();
+    const screens = useBreakpoint();
+    
     const [collapsed, setCollapsed] = useState(true);
 
     return (
         <Layout style={{ minHeight: '100vh' }}>
-            <Sider  collapsible theme='light' collapsed={collapsed} onCollapse={(value) => setCollapsed(value)}>
+            <Sider breakpoint={screens.md?undefined:"lg"} collapsedWidth={screens.md?undefined:"0"}  collapsible theme='light' collapsed={collapsed} onCollapse={(value) => setCollapsed(value)}>
                 <div className="demo-logo-vertical" />
                 <Menu defaultSelectedKeys={[pathname]} mode="inline" items={items} />
             </Sider>

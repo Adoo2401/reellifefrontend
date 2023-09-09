@@ -6,7 +6,7 @@ import SettingPage from '@/components/dashboard/settings/SettingPage'
 
 const Page: NextPageWithLayout = () => {
   return (
-    <div className='py-4 px-10'>
+    <div className='md:py-4 md:px-10'>
        <SettingPage/>
     </div>
   )

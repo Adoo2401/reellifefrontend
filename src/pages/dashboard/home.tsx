@@ -12,7 +12,7 @@ import Stories from '@/components/dashboard/home/Stories'
  
 const Page: NextPageWithLayout = () => {
   return (
-    <div className='py-4 px-10'>
+    <div className='md:py-4 md:px-10'>
        <Instances/>
        <Overview/>
        <Performance/>

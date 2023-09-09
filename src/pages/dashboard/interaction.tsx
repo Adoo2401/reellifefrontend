@@ -6,7 +6,7 @@ import InteractionPage from '@/components/dashboard/interaction/InteractionPage'
  
 const Page: NextPageWithLayout = () => {
   return (
-    <div className='py-4 px-10'>
+    <div className='md:py-4 md:px-10'>
       <InteractionPage/>
     </div>
   )
