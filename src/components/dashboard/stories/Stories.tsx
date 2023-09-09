@@ -24,7 +24,7 @@ const Story = ({ img, text }: { img: string; text: string }) => {
 
 const Stories = () => {
     return (
-        <div className='flex relative justify-between items-center flex-wrap mt-20'>
+        <div className='flex relative justify-center sm:justify-between items-center flex-wrap mt-20'>
             {
                 Array.from({ length: 8 }).map((_, index) => (
                     <Card
