@@ -34,12 +34,12 @@ const InteractionPage = () => {
                     </Select>
                 </div>
 
-                <div className='lg:ml-auto space-x-3'>
+                <div className='lg:ml-auto md:block flex justify-center items-center flex-col space-y-2 space-x-3'>
                     <Button className='bg-white' icon={<FileAddOutlined />}>Create report</Button>
                     <DatePicker.RangePicker className=' lg:w-auto w-full' />
                 </div>
             </div>
-            <div className='mt-5 flex justify-end'>
+            <div className='mt-5 flex justify-center lg:justify-end'>
                 <Select defaultValue={"option1"} placeholder="Select an option">
                     <Option value="option1">
                         <div className='flex items-center  space-x-2'>

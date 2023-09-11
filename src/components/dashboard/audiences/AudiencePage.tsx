@@ -9,7 +9,7 @@ import {
 const AudiencePage = () => {
     return (
         <>
-            <div className="flex justify-end">
+            <div className="flex justify-center md:justify-end">
                 <Button className="bg-[#8b62ff]" type="primary" icon={<PlusOutlined />}>
                     New Audience
                 </Button>

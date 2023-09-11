@@ -1,6 +1,6 @@
-import  Document , { Html, Head, Main, NextScript } from "next/document";
+import Document, { Html, Head, Main, NextScript } from "next/document";
 import Script from "next/script";
-import {StyleProvider,createCache,extractStyle} from '@ant-design/cssinjs'
+import { StyleProvider, createCache, extractStyle } from '@ant-design/cssinjs'
 import type { DocumentContext } from "next/document";
 
 function MyDocument() {
@@ -14,6 +14,18 @@ function MyDocument() {
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+        />
+        <link
+          href="https://unpkg.com/@blueprintjs/icons@4/lib/css/blueprint-icons.css"
+          rel="stylesheet"
+        />
+        <link
+          href="https://unpkg.com/@blueprintjs/core@4/lib/css/blueprint.css"
+          rel="stylesheet"
+        />
+        <link
+          href="https://unpkg.com/@blueprintjs/popover2@1/lib/css/blueprint-popover2.css"
+          rel="stylesheet"
         />
 
         <Script id="vwoCode" strategy="beforeInteractive">

@@ -7,7 +7,7 @@ const { Option } = Select;
 const AnalyticsHeader = () => {
   return (
     <>
-    <div className='grid grid-cols-1 lg:grid-cols-2 place-items-center space-y-4 lg:space-y-0 lg:place-items-start'>
+    <div className='grid grid-cols-1 lg:grid-cols-2 sm:place-items-center space-y-4 lg:space-y-0 place-items-start'>
             <div className='space-x-3 lg:space-y-0 space-y-4 '>
                 <Select defaultValue={"status1"} placeholder="Select an option">
                     <Option value="status1">Status <Badge style={{ backgroundColor: "#8b62ff", marginLeft: "7px" }} count={1} /></Option>
@@ -27,7 +27,7 @@ const AnalyticsHeader = () => {
                 </Select>
                 
             </div>
-            <div className='lg:ml-auto space-x-3'>
+            <div className='mx-auto lg:space-y-0 space-y-2 lg:block flex justify-center flex-col items-center space-x-3'>
               <Button className='bg-white' icon={<FileAddOutlined />}>Create report</Button>
               <DatePicker.RangePicker className=' lg:w-auto w-full' />
             </div>
